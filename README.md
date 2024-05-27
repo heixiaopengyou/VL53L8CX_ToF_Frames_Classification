@@ -39,3 +39,6 @@ Here is a brief description of the steps undertaken during this workflow:
   
 - Qunatization: The model quantization step enables a low cost on board deployment. This could be done through QAT (quantization aware training) or PTQ (post training quantization).
   For this study, we used PTQ in MATLAB 2024 (8-bit post training quantization), which is quite optimized and produces excellent performances.
+
+- Deployability on STM32: The 8-bit quantized model is benchmarked on the STM32CUbeAI developer Cloud, with expectation of having the optimal model for deployment.
+  Optionally, the C-code is produced and the quantized model, tested on samples in Simulink.
